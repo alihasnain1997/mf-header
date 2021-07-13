@@ -18,7 +18,7 @@
             Dropdown
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" routerLink='image/ninja'>Go to ninja</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
@@ -34,3 +34,8 @@
       </form>
     </div>
   </nav>
+
+  <div>
+    <input type="text" [(ngModel)]='message' placeholder="Enter message">
+    <button (click)="deliverMessage($event.target)">Send Message</button>
+  </div>
